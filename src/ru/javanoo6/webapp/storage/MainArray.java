@@ -1,3 +1,7 @@
+package ru.javanoo6.webapp.storage;
+
+import ru.javanoo6.webapp.model.Resume;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,13 +11,13 @@ import java.io.InputStreamReader;
  * (just run, no need to understand)
  */
 public class MainArray {
-    private final static ArrayStorage ARRAY_STORAGE = new ArrayStorage();
+    private final static StorageInterface ARRAY_STORAGE = new ArrayStorage();
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Resume r;
         while (true) {
-            System.out.print("Введите одну из команд - (list | size | save uuid | delete uuid | get uuid | clear | exit): ");
+            System.out.print("Введите одну из команд - (list | size | save uuid | update| delete uuid | get uuid | clear | exit): ");
             String[] params = reader.readLine().trim().toLowerCase().split(" ");
             if (params.length < 1 || params.length > 2) {
                 System.out.println("Неверная команда.");
@@ -40,6 +44,12 @@ public class MainArray {
                     ARRAY_STORAGE.delete(uuid);
                     printAll();
                     break;
+//                case "update":
+//                    r = new Resume();
+//                    r.uuid=uuid;
+//                    ARRAY_STORAGE.update(new Resume(uuid, params[2]));
+//                    printAll();
+//                    break;
                 case "get":
                     System.out.println(ARRAY_STORAGE.get(uuid));
                     break;
