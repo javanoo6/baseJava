@@ -1,21 +1,18 @@
 package ru.javanoo6.webapp;
 
-import ru.javanoo6.webapp.model.Resume;
-import ru.javanoo6.webapp.storage.ArrayStorage;
-import ru.javanoo6.webapp.storage.StorageInterface;
-
 /**
  * Test for your ArrayStorage implementation
  */
 public class MainTestArrayStorage {
-   private final static StorageInterface ARRAY_STORAGE = new ArrayStorage();
+    /*
+     static final Storage ARRAY_STORAGE = new ArrayStorage();
 
     public static void main(String[] args) {
-        final Resume r1 = new Resume();
+        final Resume r1 = new Resume(uuid);
         r1.setUuid("uuid1");
-        final Resume r2 = new Resume();
+        final Resume r2 = new Resume(uuid);
         r2.setUuid("uuid2");
-        final Resume r3 = new Resume();
+        final Resume r3 = new Resume(uuid);
         r3.setUuid("uuid3");
 
         System.out.println(r1==r2);
@@ -46,4 +43,6 @@ public class MainTestArrayStorage {
             System.out.println(r);
         }
     }
+*/
 }
+

@@ -6,7 +6,7 @@ import ru.javanoo6.webapp.model.Resume;
 /**
  * Array based storage for Resumes
  */
-public interface StorageInterface {
+public interface Storage {
 
 
     void clear();
