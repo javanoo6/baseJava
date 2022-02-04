@@ -1,22 +1,8 @@
 package ru.javanoo6.webapp.storage;
 
-import org.junit.Test;
+    public class SortedArrayStorageTest extends AbstractArrayStorageTest {
 
-public class SortedArrayStorageTest extends AbstractArrayStorageTest{
-
-    public SortedArrayStorageTest() {
-        super(new SortedArrayStorage());
+        public SortedArrayStorageTest() {
+            super(new SortedArrayStorage());
+        }
     }
-
-    @Test
-    public void fillDeletedElement() {
-    }
-
-    @Test
-    public void insertElement() {
-    }
-
-    @Test
-    public void getIndex() {
-    }
-}
